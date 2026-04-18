@@ -1,0 +1,21 @@
+{
+  "name": "automated-tests-playgroud-playwright",
+  "version": "1.0.0",
+  "description": "Projeto de automacao web com Playwright + Cucumber em Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test:bdd": "node scripts/runBddWithReport.js",
+    "test:bdd:login": "node scripts/runBddWithReport.js --tags @login",
+    "test:playwright": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^16.6.1",
+    "multiple-cucumber-html-reporter": "^3.9.0"
+  }
+}
