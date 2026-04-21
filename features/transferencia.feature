@@ -6,8 +6,13 @@ Funcionalidade: Transferencia
     Para realizar pagamentos a terceiros
 
 
-    Cenario: Realizar transferencia com sucesso
+    Esquema do Cenario: Realizar transferencia com sucesso
         Dado que esteja logado
-        Quando realizar transferencia de 10,00
+        Quando realizar transferencia de <valor>
         Entao validar que a transferencia foi realizada com sucesso
+
+        Exemplos:
+            | valor  |
+            | 10,00  |
+            | 9,99   |
 
