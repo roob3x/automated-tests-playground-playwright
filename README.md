@@ -22,6 +22,7 @@ Execute os cenarios BDD:
 ```bash
 npm run test:bdd
 ```
+Obs: ajuste o TAG_NAME para o nome da tag que queira executar
 
 Relatorio HTML apos a execucao:
 

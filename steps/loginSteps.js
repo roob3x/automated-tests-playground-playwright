@@ -4,6 +4,11 @@ Given('que o usuario acessa a pagina de login', async function () {
     await this.loginPage.goTo();
 });
 
+Given('que esteja logado', async function () {
+    await this.loginPage.enterCredentials('julio.lima', '123456');
+    await this.loginPage.submitLogin()
+});
+
 When(
     'informar o usuario {string} e a senha {string}',
     async function (username, password) {
