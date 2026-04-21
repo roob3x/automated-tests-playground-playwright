@@ -3,6 +3,7 @@ require('dotenv').config();
 const { Before, After, setDefaultTimeout } = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
 const LoginPage = require('../pages/LoginPage');
+const TransferPage = require('../pages/TransferPage');
 
 setDefaultTimeout(60 * 1000);
 
@@ -32,6 +33,7 @@ Before(async function () {
     }
 
     this.loginPage = new LoginPage(this.page);
+    this.transferPage = new TransferPage(this.page);
 });
 
 After(async function () {

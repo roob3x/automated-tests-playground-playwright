@@ -29,6 +29,12 @@ class BasePage {
         await locator.fill(value);
     }
 
+    async selectOption(selector, value) {
+        const locator = this.getLocator(selector);
+        await locator.waitFor({ state: 'attached' });
+        await locator.selectOption(value);
+    }
+
     async getText(selector) {
         return await this.getLocator(selector).textContent();
     }
